@@ -3,7 +3,7 @@
 
 #FROM golang:1.11.1 as builder
 #FROM aanamaka/golang:1.11.1 as builder
-FROM public.ecr.aws/docker/library/golang:1.11.1 as builder
+FROM public.ecr.aws/docker/library/golang:1.14.14 as builder
 
 RUN mkdir -p /go/src/github.com/eks-workshop-sample-api-service-go
 WORKDIR /go/src/github.com/eks-workshop-sample-api-service-go
